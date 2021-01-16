@@ -755,6 +755,9 @@ background-color: #95e1d3;
 	padding-top: 65px;
 	background-color: #f8f8f8;
 }
+.footer__inner {
+	padding-bottom: 65px;
+}
 .footer__logo {
 	margin-bottom: 30px;
 	font-size: 40px;
@@ -786,5 +789,46 @@ background-color: #95e1d3;
 	font-weight: 300;
 }
 .footer__social-content a {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+	font-size: 18px;
 	color: #95e1d3;
+}
+/* Subscribe */
+.subscribe {
+	width: 100%;
+	max-width: 380px;
+	display: flex;
+}
+.subscribe__input {
+	width: 60%;
+	height: 40px;
+	padding: 12px;
+	background: #fff;
+	border: 1px solid #d2d2d2;
+	font-family: 'Montserrat',
+	sans-serif;
+	font-size: 15px;
+	color: #333;
+	font-weight: 300;
+	font-style: italic;
+
+	outline-color: #95e1d3;
+}
+.subscribe__input::placeholder {
+	color: #ccc;
+}
+.subscribe__btn {
+	height: 40px;
+	padding: 12px 30px;
+	background-color: #95e1d3;
+	border: 0;
+	cursor: pointer;
+	font-family: 'Montserrat',
+	sans-serif;
+	font-size: 14px;
+	line-height: 1.1;
+	color: #fff;
+	text-transform: uppercase;
 }
