@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
@@ -21,6 +22,12 @@
 	<a class="nav__link" href="#">Blog</a>
 	<a class="nav__link" href="#">Work</a>
 	<a class="nav__link" href="#">Contact</a>
+	<a class="nav__link" href="#">
+		<i class="fas fa-cart-arrow-down"></i>
+	</a>
+	<a class="nav__link" href="#">
+		<i class="fas fa-search"></i>  
+	</a>
 </nav> 	
 </div> 
 	</div> 			
@@ -39,13 +46,21 @@
 		<div class="container">
 			<div class="slider__inner">
 				<div class="slider__item active">
-					<span class="slider__num">01</span> Intro</div>
+					<span class="slider__num">01</span>
+					<span class="slider__text">Intro</span>
+				</div>
 				<div class="slider__item">
-					<span class="slider__num">02</span> Work</div>
+					<span class="slider__num">02</span>
+					 <span class="slider__text">Work</span>
+					</div>
 				<div class="slider__item">
-					<span class="slider__num">03</span> About</div>
+					<span class="slider__num">03</span>
+					 <span class="slider__text">About</span>
+					</div>
 				<div class="slider__item">
-					<span class="slider__num">04</span> Contacts</div>
+					<span class="slider__num">04</span>
+					 <span class="slider__text">Contacts</span>
+					</div>
 			</div>
 		</div>
 	</div>
@@ -128,7 +143,7 @@
 			</div>
 
 			<div class="services">
-				<div class="services__item">
+				<div class="services__item services__item--border">
 					<img class="services__icon"
 				src="assets/imges/services/photography.png" alt="">	
 
@@ -137,7 +152,7 @@
 						consectetur adipiscing elit, sed do eiusmod tempor</div>
 				</div>
 
-				<div class="services__item">
+				<div class="services__item services__item--border">
 					<img class="services__icon"
 				src="assets/imges/services/webdesign.png" alt="">	
 
@@ -146,7 +161,7 @@
 						adipiscing elit, sed do eiusmod tempor</div>
 					</div>
 
-				<div class="services__item">
+				<div class="services__item services__item--border">
 				<img class="services__icon"
 				src="assets/imges/services/creativ.png" alt="">	
 
@@ -154,9 +169,7 @@
 					<div class="services__text">Dolor sit amet, consectetur adipiscing elit,
 						 sed do eiusmod tempor</div>	
 				</div>
-			</div><!-- /.services -->
-<hr>
-			<div class="services">
+			
 				<div class="services__item">
 					<img class="services__icon"
 				src="assets/imges/services/seo.png" alt="">	
@@ -534,7 +547,7 @@ quis nostrud exercitation."</div>
 		</div>
 		<div class="clients">
 			<div class="clients__item">
-				<img class="clients__photo" src="http://placehold.it/110" alt=""> 	
+				<img class="clients__photo" src="assets/imges/clients/1.png" alt=""> 	
 				
 				<div class="clients__content">
 					<div class="clients__name">Matthew Dix</div>	
@@ -546,7 +559,7 @@ quis nostrud exercitation."</div>
 			</div>
 
 			<div class="clients__item">
-				<img class="clients__photo" src="http://placehold.it/110" alt=""> 	
+				<img class="clients__photo" src="assets/imges/clients/2.png" alt=""> 	
 					<div class="clients__content">
 						<div class="clients__name">Nick Karvounis</div>	
 						<div class="clients__prof">Graphic Design</div>
@@ -557,7 +570,7 @@ quis nostrud exercitation."</div>
 			</div>
 
 			<div class="clients__item">
-				<img class="clients__photo" src="http://placehold.it/110" alt=""> 
+				<img class="clients__photo" src="assets/imges/clients/3.png" alt=""> 
 
 				<div class="clients__content">
 					<div class="clients__name">Jaelynn Castillo</div>	
@@ -568,7 +581,7 @@ quis nostrud exercitation."</div>
 			</div>
 
 			<div class="clients__item">
-				<img class="clients__photo" src="http://placehold.it/110" alt="">
+				<img class="clients__photo" src="assets/imges/clients/4.png" alt="">
 
 				<div class="clients__content">
 					<div class="clients__name">Mike Petrucci</div>	
@@ -620,7 +633,7 @@ quis nostrud exercitation."</div>
 			<div class="blog__item">
 				<div class="blog__header">
 					<a href="#">
-					<img class="blog__photo" src="assets/imges/blog/1.png" alt="">
+					<img class="blog__photo" src="assets/imges/blog/2.png" alt="">
 					<div class="blog__date">
 						<div class="blog__date-day">14</div>Jan
 					</div>
@@ -645,7 +658,7 @@ quis nostrud exercitation."</div>
 			<div class="blog__item">
 				<div class="blog__header">
 					<a href="#">
-					<img class="blog__photo" src="assets/imges/blog/1.png" alt="">
+					<img class="blog__photo" src="assets/imges/blog/3.png" alt="">
 					<div class="blog__date">
 						<div class="blog__date-day">12</div>Jan
 					</div>
@@ -685,12 +698,14 @@ quis nostrud exercitation."</div>
 <footer class="footer">
 	<div class="container">
 		<div class="footer__inner">
-			<div class="footer__col">
+			<div class="footer__col footer__col--first">
+				
 				<div class="footer__logo">MoGo</div>
 				<div class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 iusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim.
 d minim veniam, quis nostrud exercitation ullamco laboris nisi ut
 liquip ex ea commodo consequat.</div>
+			
 				<div class="footer__social">
 					<div class="footer__social-header">
 						<b>15K</b> followers
@@ -729,10 +744,83 @@ liquip ex ea commodo consequat.</div>
 				<input class="subscribe__input" type="email" name="name" placeholder="Your Email...">
 				<button class="subscribe__btn" type="submit">Subscribe</button>
 				</form>
+			</div>
+			
+			<div class="footer__col footer__col--second">
+				<div class="footer__title">blogs</div>
+					<div class="blogs">
+						<div class="blogs__item">
+							
+							<img class="blogs__img" src="assets/imges/blogs/1.png" alt="">
+							<div class="blogs__content">
+							<a class="blogs__title" href="#">Lorem ipsum dolor sit amet,  consectetur adipiscing</a>
+								<div class="blogs__date">Jan 9, 2016</div>
+							</div>
+						</div>
+						<div class="blogs__item">
+							<img class="blogs__img" src="assets/imges/blogs/2.png" alt="">
+							<div class="blogs__content">
+							<a class="blogs__title" href="#">Consectetur adipiscing elit,  sed do eiusmod tempor</a>
+								<div class="blogs__date">Jan 9, 2016</div>
+							</div>
+						</div>
+						<div class="blogs__item">
+							<img class="blogs__img" src="assets/imges/blogs/3.png" alt="">
+							<div class="blogs__content">
+							<a class="blogs__title" href="#">sed do eiusmod tempor  incididunt ut labore</a>
+								<div class="blogs__date">Jan 9, 2016</div>
+							</div>
+						</div>
+						
+					</div><!-- /.blogs -->
+				</div>
+			<div class="footer__col footer__col--third">
+				<div class="footer__title">instagram</div>
+
+				<div class="instagram">
+					<a class="instagram__item" href="#" target="_blank">
+						<img src="assets/imges/instagram/1.png" alt="">
+					</a> 
+
+					<a class="instagram__item" href="#" target="_blank">
+						<img src="assets/imges/instagram/2.png" alt="">
+					</a> 
+
+					<a class="instagram__item" href="#" target="_blank">
+						<img src="assets/imges/instagram/3.png" alt="">
+					</a> 
+					<a class="instagram__item" href="#" target="_blank">
+						<img src="assets/imges/instagram/4.png" alt="">
+					</a> 
+
+					<a class="instagram__item" href="#" target="_blank">
+						<img src="assets/imges/instagram/5.png" alt="">
+					</a> 
+
+					<a class="instagram__item" href="#" target="_blank">
+						<img src="assets/imges/instagram/6.png" alt="">
+					</a> 
+					<a class="instagram__item" href="#" target="_blank">
+						<img src="assets/imges/instagram/7.png" alt="">
+					</a> 
+
+					<a class="instagram__item" href="#" target="_blank">
+						<img src="assets/imges/instagram/8.png" alt="">
+					</a> 
+
+					<a class="instagram__item" href="#" target="_blank">
+						<img src="assets/imges/instagram/9.png" alt="">
+					</a> 
+
+				</div>
 			</div>	
 		</div><!-- /.footer__inner -->
+		<div class="copyright">
+			© 2016 MoGo free PSD template by <span>Laaqiq</span>
+		</div>
 	</div><!-- /.container -->
 	
 </footer>
 </body>
 </html>
+  
