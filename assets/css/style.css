@@ -408,14 +408,18 @@ background-color: #95e1d3;
 /* Wedo */
 .wedo {
 	display: flex;
-}
+	flex-wrap: ;
+	margin: 0 -15px;
+	}
 .wedo__item {
 	width: 50%;
+	padding: 0 15px;
 }
-.wedo__item  {
+.wedo__img  {
 	display: block;
 	max-width: 100%;
 	height: auto;
+	
 }
 /* Accordion */
 .accordion__item {
@@ -994,7 +998,7 @@ background-color: #95e1d3;
 	}
 }
 
-.services__icon
+
 @media (max-width: 770px) {
 	/* nav */
 	.nav {
@@ -1033,14 +1037,31 @@ background-color: #95e1d3;
 	.slider__item.active:before {
 		width: 50%;
 	}
-
+	/* services */
+	.services {
+		justify-content: center;
+	}
 	.services__item {
 		width: 100%;
+		max-width: 400px;
+		padding-left: 55px;
+		padding-right: 0;
+	}
+	.services__icon {
+		left: 0;
 	}
 
+	/* Wedo */
+	.wedo__img {
+		display: none;
+	}
+
+	.wedo__item {
+		width: 100%;
+	}
 			}
 
-
+ 
 @media (max-width: 575px) {
 
 	/* intro */
