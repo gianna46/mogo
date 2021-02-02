@@ -691,6 +691,7 @@ background-color: #95e1d3;
 }
 .blog {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 .blog__item {
@@ -877,11 +878,13 @@ background-color: #95e1d3;
 		justify-content: space-between;
 	}
 	.instagram__item {
-		width: 32.333333%;
+		width: 33%;
 		border-bottom: 1px solid #fff;
 	}
 	.instagram__item img {
 		display: block;
+		max-width: 100%;
+		height: auto;
 	}
 /* Subscribe */
 .subscribe {
@@ -1024,6 +1027,19 @@ background-color: #95e1d3;
 	.reviews__item {
 		padding-left: 175px;
 	}
+
+	/* clients */
+	.clients {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+	.clients__item {
+		width: 100%;
+		padding-right: 0;
+	}
+	.clients__item:last-child {
+		margin-bottom: 0;
+	}
 }
 
 
@@ -1110,6 +1126,18 @@ background-color: #95e1d3;
 		flex: none;
 		width: 50%;
 	}
+	/* blog */
+		.blog {
+			max-width: 380px;
+			margin: 0 auto;
+		}
+		.blog__item {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+		.blog__item:last-child {
+			margin-bottom: 0;
+		}
 			}
 
  
@@ -1179,6 +1207,17 @@ background-color: #95e1d3;
 	}
 	.works__col {
 		width: 100%;
+	}
+	/* clients */
+	.clients__photo {
+		 position: static;
+	}
+	.clients__item {
+		padding-left: 0;
+		text-align: center;
+	}
+	.clients__text {
+		margin: 15px auto;
 	}
 }
 
