@@ -272,12 +272,13 @@ line-height: 1;
 	justify-content: space-between;
 }
 .card__item {
-		width: 33.333333%;
-		padding: 0 15px;
+	position: relative;
+	width: 33.333333%;
+	padding: 0 15px;
 }
 .card__inner {
-position: relative;	
-background-color: #95e1d3;
+	position: relative;	
+	background-color: #95e1d3;
 }
 
 .card__inner:hover .card__img {
@@ -302,6 +303,7 @@ background-color: #95e1d3;
 	height: auto;
 	transition: opacity .1s linear;
 }
+
 .card__text {
 	font-size: 18px;
 	color: #fff;
