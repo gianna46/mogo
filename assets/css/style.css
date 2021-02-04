@@ -441,7 +441,7 @@ background-color: #95e1d3;
 	border-bottom-color: #e5e5e5;
 	}
 
-.accordion__item.active,
+.accordion__item.active .accordion__icon,
 .accordion__header:after {
 	transform: translateY(-50%)
 	rotate(-45deg);
