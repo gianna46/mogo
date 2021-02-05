@@ -276,6 +276,7 @@ line-height: 1;
 	width: 33.333333%;
 	padding: 0 15px;
 }
+
 .card__inner {
 	position: relative;	
 	background-color: #95e1d3;
@@ -301,7 +302,11 @@ line-height: 1;
 	display: block;
 	max-width: 100%;
 	height: auto;
-	transition: opacity .1s linear;
+	transition: opacity .2s linear;
+}
+
+.card__item:hover .card__img img {
+	opacity: 0.1;
 }
 
 .card__text {
@@ -319,6 +324,11 @@ line-height: 1;
 	transform: translate3d(0, -50%, 0);
 	transition: opacity .2s linear;
 }
+
+.card__item:hover .card__text {
+	opacity: 1;
+}
+
 .card__info {
 	margin-top: 20px;
 	text-align: center;
